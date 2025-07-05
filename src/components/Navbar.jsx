@@ -3,7 +3,9 @@ import logo from '../assets/plogo.png.jpg'
 import {FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
-import {Link} from 'react-scroll'
+import {Link} from 'react-scroll';
+
+
 const Navbar = () => {
 const [nav , setNav] = useState(false);
 
@@ -47,26 +49,24 @@ return (
         {/* social icons */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
             <ul>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration:300 bg-gray-800 '>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-gray-800 '>
                     <a className='flex justify-between items-center ml-5 w-full text-gray-300'
-                    href='/'>Github <FaGithub style={{marginRight:"15px"}} size={30}/>
+                    href='https://github.com/86103Preethi' target="_blank" rel="noreferrer">
+                        Github <FaGithub style={{marginRight:"15px"}} size={30}/>
                     </a>
                 </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-1px] duration:300 bg-blue-600 '>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-1px] duration-300 bg-blue-600 '>
                 <a className='flex justify-between items-center ml-5 w-full text-gray-300'
-                    href='/'>Linkedln <FaLinkedin style={{marginRight:"15px"}} size={30}/>
+                    href='https://www.linkedin.com/in/preethi-s-6a44061b1/ ' target="_blank" rel="noreferrer">
+                        Linkedln <FaLinkedin style={{marginRight:"15px"}} size={30}/>
                     </a>
                 </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-1px] duration:300 bg-[#f34440]'>
+                {/* <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-1px] duration-300 bg-[#f34440]'>
                     <a className='flex justify-between items-center ml-5 w-full text-gray-300'
-                    href='/'>Email Id<HiOutlineMail style={{marginRight:"15px"}} size={30}/>
+                    href='/preethis835@gmail.com' target="_blank" rel="noreferrer">
+                        Email Id<HiOutlineMail style={{marginRight:"15px"}} size={30}/>
                     </a>
-                </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-1px] duration:300 bg-[#1d9f1a] '>
-                    <a className='flex justify-between items-center ml-5 w-full text-gray-300'
-                    href='/'>Resume <BsFillPersonLinesFill style={{marginRight:"15px"}} size={30}/>
-                    </a>
-                </li>
+                </li> */}
             </ul>
         </div>
     </div>

@@ -3,9 +3,12 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from './components/Work';
-import Contact from './components/Contact'
+import Project from './components/Project.jsx';
+import Contact from './components/Contact';
+import './App.css';
 
-function App() {
+
+const App = () => {
   return (
     <div className="">
       <Navbar/>
@@ -13,6 +16,7 @@ function App() {
       <About/>
       <Skills/>
       <Work/>
+      <Project/>
       <Contact/>
     </div>
   );
