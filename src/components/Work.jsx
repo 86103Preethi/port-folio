@@ -17,11 +17,11 @@ const experiences = [
     tags: ['React.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'Svelte.js', 'Javascript (ES6+)', 'Typescript', 'GSAP', 'Phasor.io'],
   },
   {
-    company: 'Augray',
+    company: 'Augray Pvt Ltd',
     location: 'Guindy, Chennai',
     role: 'Technical Business Analyst Intern',
     period: 'Mar 2022 - Oct 2022',
-    description: 'Worked on immersive technologies like AR, VR, and XR for enterprise solutions, collaborating with product and tech teams.',
+    description: 'Worked on immersive technologies like AR, VR, and XR for enterprise solutions, collaborating with product and tech teams. Developed flowcharts and made analysis about the project.',
     tags: ['AR', 'VR', 'XR', 'Analysis', 'Documentation', 'Presentation'],
   },
 ];
@@ -29,13 +29,9 @@ const experiences = [
 const Work = () => {
   return (
     <div className="w-full bg-black text-white py-16 px-6" name="experience">
-      <div className="max-w-[1000px] mx-auto text-center">
-        <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] mb-4">
-          Experience
-        </p>
-        <p className="text-[#6b7280] mt-2 mb-8">
-          My journey so far in the tech industry
-        </p>
+      <div className="max-w-[1000px] mx-auto p-4 text-center">
+        <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] mb-4">Experience</p>
+        <p className="text-[#6b7280] py-6">My journey so far in the tech industry</p>
 
         <Grid container spacing={4} direction="column" alignItems="center">
           {experiences.map((exp, idx) => (
