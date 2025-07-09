@@ -19,11 +19,11 @@ const Home = () => {
   return (
     <div
       name='home'
-      className='grid grid-cols-1 sm:grid-cols-2 w-full h-screen bg-black text-[#c76acb] overflow-hidden'
+      className='grid grid-cols-1 md:grid-cols-2 px-5 w-full min-h-screen bg-black text-[#c76acb] overflow-hidden pt-[80px]'
     >
       {/* Left side content with animation */}
       <motion.div
-        className='max-w-[1000px] mx-auto sm:ml-44 px-8 flex flex-col justify-center h-full'
+        className='max-w-[1000px] mx-auto ml-0 lg:ml-44 flex flex-col justify-center h-full'
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -55,7 +55,10 @@ const Home = () => {
           component="img"
           alt='Profile Pic'
           src={pink}
-          sx={{ width: 380, height: 380, borderRadius: '50%', objectFit: 'cover' }}
+          sx={{     
+            width: { xs: 280, sm: 350, md: 380 }, 
+            height: { xs: 280, sm: 350, md: 380 }, 
+            borderRadius: '50%', objectFit: 'cover' }}
           className='hover:scale-110 transition-transform duration-300 border border-[#c76acb] border-2'
         />
       </motion.div>

@@ -67,7 +67,7 @@ const skillData = [
 
 const Skills = () => {
   return (
-    <div name="skills" className="bg-black text-[#6b7280] min-h-screen w-full text-center flex items-center">
+    <div name="skills" className="bg-black text-[#6b7280] min-h-screen px-5 w-full text-center flex items-center">
       <div className="max-w-[1000px] mx-auto w-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] text-[#ccd6f6]">Skills</p>

@@ -28,7 +28,7 @@ const experiences = [
 
 const Work = () => {
   return (
-    <div className="w-full bg-black text-white py-16 px-6" name="experience">
+    <div className="w-full bg-black text-white py-16 px-5" name="work">
       <div className="max-w-[1000px] mx-auto p-4 text-center">
         <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] mb-4">Experience</p>
         <p className="text-[#6b7280] py-6">My journey so far in the tech industry</p>
@@ -60,7 +60,7 @@ const Work = () => {
                 <Box sx={{ p: 2 }}>
                   <Stack direction="row" spacing={1} flexWrap="wrap">
                     {exp.tags.map((tag, index) => (
-                      <Chip key={index} label={tag} size="small" color='primary' sx={{ background: '#c76acb' }}/>
+                      <Chip key={index} label={tag} size="small" color='primary' sx={{ background: '#c76acb' , mb : 1 , mt:1}}/>
                     ))}
                   </Stack>
                 </Box>

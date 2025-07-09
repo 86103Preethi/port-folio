@@ -27,7 +27,7 @@ const workData = [
     certificate: 'https://github.com/86103Preethi/food-cart',
   },
   {
-    title: 'Data Visualization and Dashboard',
+    title: 'Data Visualization Dashboard',
     image: data,
     description: 'Built a dynamic dashboard to visualize complex datasets using React and Chart.js, including filters, charts, and analytics widgets.',
     certificate: '#',
@@ -49,7 +49,7 @@ const workData = [
 
 const Work = () => {
   return (
-    <div name="work" className="w-full bg-black text-[#ccd6f6] py-16 px-6">
+    <div name="project" className="w-full bg-black text-[#ccd6f6] py-16 px-5">
       <div className="max-w-[1000px] mx-auto text-center">
         <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] mb-4">
           Projects
