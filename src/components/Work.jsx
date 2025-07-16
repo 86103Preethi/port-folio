@@ -14,7 +14,7 @@ const experiences = [
     role: 'Junior Front-End Developer',
     period: 'Mar 2023 - Present',
     description: 'Developed responsive UI using React, Tailwind CSS, HTML, and CSS. Contributed to live projects including web apps and dashboards.',
-    tags: ['React.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'Svelte.js', 'Javascript (ES6+)', 'Typescript', 'GSAP', 'Phasor.io'],
+    tags: ['HTML5', 'CSS3', , 'Javascript (ES6+)', 'React.js', 'Tailwind CSS', 'Svelte.js', 'Typescript', 'GSAP', 'Phasor.io'],
   },
   {
     company: 'Augray Pvt Ltd',
@@ -28,20 +28,17 @@ const experiences = [
 
 const Work = () => {
   return (
-    <div className="w-full bg-black text-white py-16 px-5" name="work">
-      <div className="max-w-[1000px] mx-auto p-4 text-center">
-        <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] mb-4">Experience</p>
-        <p className="text-[#6b7280] py-6">My journey so far in the tech industry</p>
+    <div name="work" className="bg-black text-white min-h-screen text-center flex items-center">
+      <div className="max-w-[1000px] mx-auto w-full ">
+        <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] text-[#ccd6f6] mb-4">Experience</p>
+        <p className="text-[#d1d5db] py-6">My journey so far in the tech industry</p>
 
         <Grid container spacing={4} direction="column" alignItems="center">
           {experiences.map((exp, idx) => (
             <Grid item xs={12} sm={6} md={6} key={idx}>
               <Card variant="outlined" sx={{ maxWidth: 800, mx: 'auto', backgroundColor: '#1f1f1f', color: '#fff' }}>
                 <Box sx={{ p: 2 }}>
-                  <Stack
-                    direction="row"
-                    sx={{ justifyContent: 'space-between', alignItems: 'center' }}
-                  >
+                  <Stack direction="row" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
                     <Typography gutterBottom variant="h6" component="div">
                       {exp.company}
                     </Typography>
@@ -49,9 +46,12 @@ const Work = () => {
                       {exp.period}
                     </Typography>
                   </Stack>
-                  <Typography variant="subtitle2" sx={{ color: '#9ca3af' }}>
+                  <Divider sx={{ borderColor: '#333' }} />
+
+                  <Typography sx={{ color: 'white', pt:1, fontWeight: 'bold'  }}>
                     {exp.role} — {exp.location}
                   </Typography>
+
                   <Typography variant="body2" sx={{ color: '#d1d5db', mt: 1 }}>
                     {exp.description}
                   </Typography>

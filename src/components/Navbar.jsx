@@ -15,21 +15,21 @@ const handleClick = () => {
 }
 
 return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black text-[#c76acb]' >
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black text-[#c76acb]'>
         
         <div>
           <img src={logo} alt='Logo' style={{width:'120px'}}/>
         </div>
 
         {/* Menu */}
-        <div className=''>
+        <div>
             <ul className='cursor-pointer hidden md:flex'>
-                <li className='px-4 font-bold text-xl'><Link to='home' smooth={true} duration={500}>Home</Link></li>
-                <li className='px-4 font-bold text-xl'><Link to='about' smooth={true} duration={500}>About</Link></li>
-                <li className='px-4 font-bold text-xl'><Link to='skills' smooth={true} duration={500}>Skills</Link></li>
-                <li className='px-4 font-bold text-xl'><Link to='work' smooth={true} duration={500}>Work</Link></li>
-                <li className='px-4 font-bold text-xl'><Link to='project' smooth={true} duration={500}>Projects</Link></li>
-                <li className='px-4 font-bold text-xl'><Link to='contact' smooth={true} duration={500}>Contact</Link></li>
+                <li className='px-4 font-bold text-xl hover:text-[#ccd6f6]'><Link to='home' smooth={true} duration={500}>Home</Link></li>
+                <li className='px-4 font-bold text-xl hover:text-[#ccd6f6]'><Link to='about' smooth={true} duration={500}>About</Link></li>
+                <li className='px-4 font-bold text-xl hover:text-[#ccd6f6]'><Link to='skills' smooth={true} duration={500}>Skills</Link></li>
+                <li className='px-4 font-bold text-xl hover:text-[#ccd6f6]'><Link to='work' smooth={true} duration={500}>Work</Link></li>
+                <li className='px-4 font-bold text-xl hover:text-[#ccd6f6]'><Link to='project' smooth={true} duration={500}>Projects</Link></li>
+                <li className='px-4 font-bold text-xl hover:text-[#ccd6f6]'><Link to='contact' smooth={true} duration={500}>Contact</Link></li>
             </ul>
         </div>
 
@@ -40,12 +40,12 @@ return (
 
         {/* mobile menu */}
         <ul className={!nav? 'hidden': 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center cursor-pointer'}>
-            <li className="py-6 text-4xl"><Link onClick={handleClick} to='home' smooth={true} duration={500}>Home</Link></li>
-            <li className="py-6 text-4xl"><Link onClick={handleClick} to='about' smooth={true} duration={500}>About</Link></li>
-            <li className="py-6 text-4xl"><Link onClick={handleClick} to='skills' smooth={true} duration={500}>Skills</Link></li> 
-            <li className="py-6 text-4xl"><Link onClick={handleClick} to='work' smooth={true} duration={500}>Work</Link></li>
-            <li className="py-6 text-4xl"><Link onClick={handleClick} to='project' smooth={true} duration={500}>Projects</Link></li>
-            <li className="py-6 text-4xl"><Link onClick={handleClick} to='contact' smooth={true} duration={500}>Contact</Link></li>
+            <li className="py-6 text-4xl hover:text-[#ccd6f6]"><Link onClick={handleClick} to='home' smooth={true} duration={500}>Home</Link></li>
+            <li className="py-6 text-4xl hover:text-[#ccd6f6]"><Link onClick={handleClick} to='about' smooth={true} duration={500}>About</Link></li>
+            <li className="py-6 text-4xl hover:text-[#ccd6f6]"><Link onClick={handleClick} to='skills' smooth={true} duration={500}>Skills</Link></li> 
+            <li className="py-6 text-4xl hover:text-[#ccd6f6]"><Link onClick={handleClick} to='work' smooth={true} duration={500}>Work</Link></li>
+            <li className="py-6 text-4xl hover:text-[#ccd6f6]"><Link onClick={handleClick} to='project' smooth={true} duration={500}>Projects</Link></li>
+            <li className="py-6 text-4xl hover:text-[#ccd6f6]"><Link onClick={handleClick} to='contact' smooth={true} duration={500}>Contact</Link></li>
         </ul>
 
         {/* social icons */}
@@ -71,6 +71,7 @@ return (
                 </li> */}
             </ul>
         </div>
+        
     </div>
   )
 }

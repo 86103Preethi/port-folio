@@ -17,10 +17,7 @@ const Certificate = () => {
         {/* Projects Grid */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Project 1 */}
-          <div
-              style={{ backgroundImage: `url(${internship})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-lg shadow-black"
-          >
+          <div style={{ backgroundImage: `url(${internship})` }} className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-lg shadow-black">
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-xl font-bold text-black tracking-wider">
                 My Internship Program
@@ -39,10 +36,7 @@ const Certificate = () => {
           </div>
 
           {/* Project 2 */}
-          <div
-            style={{ backgroundImage: `url(${svelte})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-lg shadow-black"
-          >
+          <div style={{ backgroundImage: `url(${svelte})` }} className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-lg shadow-black">
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-xl font-bold text-black tracking-wider">
                 Medicinal App with Doctor Consultancy
@@ -61,10 +55,7 @@ const Certificate = () => {
           </div>
 
           {/* Project 3 */}
-          <div
-            style={{ backgroundImage: `url(${svelte})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-lg shadow-black"
-          >
+          <div style={{ backgroundImage: `url(${svelte})` }} className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-lg shadow-black" >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-xl font-bold text-black tracking-wider">
                 Betting App

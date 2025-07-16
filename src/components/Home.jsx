@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Resume from '../assets/Preethi.pdf';
 
 const Home = () => {
-   const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleResume = () => {
     setShowModal(true);
@@ -17,10 +17,7 @@ const Home = () => {
   
 
   return (
-    <div
-      name='home'
-      className='grid grid-cols-1 md:grid-cols-2 px-5 w-full min-h-screen bg-black text-[#c76acb] overflow-hidden pt-[80px]'
-    >
+    <div name='home' className='grid grid-cols-1 md:grid-cols-2 px-5 w-full min-h-screen bg-black text-[#c76acb] overflow-hidden pt-[80px]'>
       {/* Left side content with animation */}
       <motion.div
         className='max-w-[1000px] mx-auto ml-0 lg:ml-44 flex flex-col justify-center h-full'
@@ -28,17 +25,17 @@ const Home = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <p className='text-xl text-[#c76acb] mb-3'>Hi,</p>
+        <p className='text-xl text-[#c76acb] mb-3'>Hi, this is</p>
         <h1 className='text-4xl sm:text-4xl font-bold text-[#6b7280]'>
-          I'm <span className='text-[#ccd6f6]'>Preethi S</span>
+          I'm <span className='text-[#ccd6f6]'>Preethi S,</span>
         </h1>
-        <h2 className='text-4xl sm:text-4xl font-bold text-[#6b7280]'>a Front-End Developer</h2>
+        <h2 className='text-4xl sm:text-4xl font-bold text-[#6b7280]'>Front-End Developer</h2>
         <p className='text-xl text-[#c76acb] mt-3'>
-          Specialized in building responsive websites with better UI/UX designs. I'm glad that you came here to know about me.
+          Specialized in building responsive websites with clean UI/UX designs. I'm glad that you came here to know about me.
         </p>
         <div className='mt-5'>
           <button onClick={handleResume}
-            className='group my-2 px-8 py-3 border-2 flex items-center text-white hover:bg-[#c76acb] hover:border-[#c76acb] rounded-md'>
+            className='group my-2 px-8 py-3 border-2 flex items-center text-black bg-white hover:bg-[#c76acb] hover:border-[#c76acb] rounded-md'>
             My Resume
           </button>
         </div>

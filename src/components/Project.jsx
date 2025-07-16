@@ -20,7 +20,7 @@ import todolist from '../assets/to do list - thumbnail.jpg';
 
 import dashVideo from '../assets/videos/dashboard video.mp4';
 import foodVideo from '../assets/videos/foodcart video.mp4';
-
+import churchVideo from '../assets/videos/church video.mp4';
 
 const workData = [
    {
@@ -28,7 +28,7 @@ const workData = [
     image: church,
     description: 'Developed a clean, responsive website for a local church with pages for sermons, events, and contact, using HTML, CSS, Tailwind CSS and React.',
     certificate: 'https://www.rakshaprayerhouse.org',
-    video:dashVideo
+    video:churchVideo
   },
   {
     title: 'Food Website',
@@ -78,16 +78,12 @@ const Work = () => {
 
 
   return (
-    <div name="project" className="w-full bg-black text-[#ccd6f6] py-16 px-5">
-      <div className="max-w-[1000px] mx-auto text-center">
-        <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] mb-4">
-          Projects
-        </p>
-        <p className="text-[#6b7280] py-6">
-          My Latest work and experiments
-        </p>
+    <div name="project" className="w-full bg-black text-[#ccd6f6] flex items-center text-center min-h-screen">
+      <div className="max-w-[1000px] mx-auto w-full">
+        <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] mb-4">Projects</p>
+        <p className="text-[#d1d5db] py-6"> A Collection of My Mini Builds & Ideas</p>
 
-        <Grid container spacing={4} justifyContent="center">
+        <Grid container spacing={5} justifyContent="center">
           {workData.map((item, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Card sx={{ maxWidth: 345, mx: 'auto', backgroundColor: '#1f1f1f', color: 'white' }}   className='hover:opacity-70'>
