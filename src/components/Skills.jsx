@@ -6,6 +6,15 @@ import svelte from '../assets/svelte.png';
 import tailwind from '../assets/tailwind.png';
 import js from '../assets/js.png';
 
+import git from '../assets/git.png';
+import github from '../assets/github.png';
+import bitbucket from '../assets/bitbucket.png';
+import phasor from '../assets/phasor.png';
+import gsap from '../assets/gsap.png';
+
+
+
+
 const skillData = [
   { name: 'HTML5', icon: html, level: 90 },
   { name: 'CSS3', icon: css, level: 80 },
@@ -13,9 +22,11 @@ const skillData = [
   { name: 'React.js', icon: reactLogo, level: 90 },
   { name: 'Tailwind CSS', icon: tailwind, level: 85 },
   { name: 'Svelte.js', icon: svelte, level: 80 },
-  { name: 'Git', icon: svelte, level: 80 },
-  { name: 'GSAP', icon: svelte, level: 50 },
-  { name: 'Phasor.io', icon: svelte, level: 60 },
+  { name: 'Git', icon: git, level: 80 },
+  { name: 'Github', icon: github, level: 50 },
+  { name: 'Bitbucket', icon: bitbucket, level: 50 },
+  { name: 'GSAP', icon: gsap, level: 50 },
+  { name: 'Phasor.io', icon: phasor, level: 60 },
 ];
 
 const Skills = () => {
@@ -27,7 +38,7 @@ const Skills = () => {
           <p className="py-6 text-[#d1d5db]">Technologies and frameworks I've worked with, along with proficiency levels</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {skillData.map((skill, index) => (
             <div key={index} className="shadow-md shadow-black p-4 rounded-lg bg-[#1f1f1f] hover:scale-110 duration-500">
               <img src={skill.icon} alt={skill.name} className="w-20 mx-auto mb-2" />
