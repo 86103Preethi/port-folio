@@ -28,7 +28,7 @@ const experiences = [
 
 const Work = () => {
   return (
-    <div name="work" className="bg-black text-white min-h-screen text-center flex items-center">
+    <div name="work" className="bg-black text-white min-h-screen text-center flex items-center px-5">
       <div className="max-w-[1000px] mx-auto w-full ">
         <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] text-[#ccd6f6] mb-4">Experience</p>
         <p className="text-[#d1d5db] py-6">My journey so far in the tech industry</p>
