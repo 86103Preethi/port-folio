@@ -38,3 +38,33 @@ code {
   color: #ccd6f6;
 }
 
+/* Custom slick dots */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #c76acb; 
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff; /* Active dot */
+}
+
+.slick-dots {
+  bottom: -55px; /* move dots closer/farther */
+}
+
+.slick-slide {
+  transition: transform 0.3s ease;
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
+.slick-center {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+
+
+
+

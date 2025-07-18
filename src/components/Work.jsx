@@ -30,25 +30,26 @@ const Work = () => {
   return (
     <div name="work" className="bg-black text-white min-h-screen text-center flex items-center px-5">
       <div className="max-w-[1000px] mx-auto w-full ">
-        <p className="text-4xl font-bold inline border-b-4 border-[#c76acb] text-[#ccd6f6] mb-4">Experience</p>
-        <p className="text-[#d1d5db] py-6">My journey so far in the tech industry</p>
-
+        <div className='sm:mb-10'>
+          <p className="text-4xl md:text-6xl font-bold inline border-b-4 border-[#c76acb] text-[#ccd6f6] mb-4">Experience</p>
+          <p className="text-[#d1d5db] py-6">My journey so far in the tech industry</p>
+        </div>
         <Grid container spacing={4} direction="column" alignItems="center">
           {experiences.map((exp, idx) => (
             <Grid item xs={12} sm={6} md={6} key={idx}>
               <Card variant="outlined" sx={{ maxWidth: 800, mx: 'auto', backgroundColor: '#1f1f1f', color: '#fff' }}>
                 <Box sx={{ p: 2 }}>
                   <Stack direction="row" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography gutterBottom variant="h6" component="div">
+                    <Typography gutterBottom variant="h6" component="div" sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }} >
                       {exp.company}
                     </Typography>
-                    <Typography variant="body2" sx={{ color: '#c76acb' }}>
+                    <Typography variant="body2" sx={{ color: '#c76acb',fontSize: { xs: '0.8rem', sm: '1.25rem' } }} >
                       {exp.period}
                     </Typography>
                   </Stack>
                   <Divider sx={{ borderColor: '#333' }} />
 
-                  <Typography sx={{ color: 'white', pt:1, fontWeight: 'bold'  }}>
+                  <Typography sx={{ color: 'white', pt:1, fontWeight: 'bold', fontSize: { xs: '0.9rem', sm: '1.3rem' } }}>
                     {exp.role} — {exp.location}
                   </Typography>
 
@@ -58,9 +59,9 @@ const Work = () => {
                 </Box>
                 <Divider sx={{ borderColor: '#333' }} />
                 <Box sx={{ p: 2 }}>
-                  <Stack direction="row" spacing={1} flexWrap="wrap">
+                  <Stack direction="row" spacing={1} flexWrap="wrap" sx={{rowGap: 1}}>
                     {exp.tags.map((tag, index) => (
-                      <Chip key={index} label={tag} size="small" color='primary' sx={{ background: '#c76acb' , mb : 1 , mt:1}}/>
+                      <Chip key={index} label={tag} size="small" color='primary' sx={{background: '#c76acb', mb : 1, mt:1}}/>
                     ))}
                   </Stack>
                 </Box>

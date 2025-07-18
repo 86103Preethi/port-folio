@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import logo from '../assets/plogo.png.jpg'
 import {FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
+import CloseIcon from '@mui/icons-material/Close';
 import {Link} from 'react-scroll';
 
 
@@ -32,12 +33,17 @@ return (
         </div>
 
         {/* Hamburger */}
-        <div onClick={handleClick} className='md:hidden cursor-pointer'>
+        <div onClick={handleClick} className='md:hidden cursor-pointer z-40'>
            {!nav? <FaBars/>:<FaTimes/> }
         </div >
 
         {/* mobile menu */}
         <ul className={!nav? 'hidden': 'absolute z-50 top-0 left-0 w-full h-screen bg-black flex flex-col gap-14 justify-center items-center cursor-pointer'}>
+            <li className='absolute top-3 right-4'>
+                <div onClick={handleClick} className="text-xl bg-gray-700 text-white px-2 py-1 rounded cursor-pointer">
+                 <CloseIcon />
+                </div>
+            </li>
             <li><Link className="text-4xl hover:text-[#ccd6f6]" onClick={handleClick} to='home' smooth={true} duration={500}>Home</Link></li>
             <li><Link className="text-4xl hover:text-[#ccd6f6]" onClick={handleClick} to='about' smooth={true} duration={500}>About</Link></li>
             <li><Link className="text-4xl hover:text-[#ccd6f6]" onClick={handleClick} to='skills' smooth={true} duration={500}>Skills</Link></li> 

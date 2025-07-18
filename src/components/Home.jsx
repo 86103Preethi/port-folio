@@ -1,99 +1,9 @@
-// import React, { useState } from 'react';
-// import pink from '../assets/pink.jpg';
-// import { motion } from 'framer-motion';
-// import Box from '@mui/material/Box';
-// import Resume from '../assets/Preethi.pdf';
- 
-// const Home = () => {
-//   const [showModal, setShowModal] = useState(false);
- 
-//   const handleResume = () => {
-//     setShowModal(true);
-//   };
- 
-//   const handleClose = () => {
-//     setShowModal(false);
-//   };
-  
- 
-//   return (
-//     <div name='home' className='grid grid-cols-1 md:grid-cols-2 px-5 w-full min-h-screen bg-black text-[#c76acb] overflow-hidden pt-[80px] px-5'>
-//       {/* Left side content with animation */}
-//       <motion.div
-//         className='max-w-[1000px] mx-auto ml-0 lg:ml-44 flex flex-col justify-center h-full'
-//         initial={{ x: -100, opacity: 0 }}
-//         whileInView={{ opacity: 1, x: 0 }}
-//         transition={{ duration: 0.8 }}
-//       >
-//         <p className='text-xl text-[#c76acb] mb-3'>Hi, this is</p>
-//         <h1 className='text-4xl sm:text-4xl font-bold text-[#6b7280]'>
-//           I'm <span className='text-[#ccd6f6]'>Preethi S,</span>
-//         </h1>
-//         <h2 className='text-4xl sm:text-4xl font-bold text-[#6b7280]'>Front-End Developer</h2>
-//         <p className='text-xl text-[#c76acb] mt-3'>
-//           Specialized in building responsive websites with clean UI/UX designs. I'm glad that you came here to know about me.
-//         </p>
-//         <div className='mt-5'>
-//           <button onClick={handleResume}
-//             className='group my-2 px-8 py-3 border-2 flex items-center text-black bg-white hover:bg-[#c76acb] hover:border-[#c76acb] rounded-md'>
-//             My Resume
-//           </button>
-//         </div>
-//       </motion.div>
- 
-//       {/* Right side avatar with animation */}
-//       <motion.div
-//         className='flex justify-center items-center'
-//         initial={{ scale: 0, opacity: 0 }}
-//         animate={{ scale: 1, opacity: 1 }}
-//         transition={{ duration: 0.8 }}
-//       >
-//         <Box
-//           component="img"
-//           alt='Profile Pic'
-//           src={pink}
-//           sx={{     
-//             width: { xs: 280, sm: 350, md: 380 },
-//             height: { xs: 280, sm: 350, md: 380 },
-//             borderRadius: '50%', objectFit: 'cover' }}
-//           className='hover:scale-110 transition-transform duration-300 border border-[#c76acb] border-2'
-//         />
-//       </motion.div>
- 
- 
- 
- 
-//       {/* Modal */}
-//       {showModal && (
-//         <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center">
-//           <div className="bg-white rounded-md p-4 max-w-4xl w-full h-[80%] relative">
-//             <button
-//               onClick={handleClose}
-//               className="absolute top-0 right-1 text-black font-bold text-lg"
-//             >
-//               ✕
-//             </button>
-//             <iframe
-//               src={Resume}
-//               title="Resume PDF"
-//               className="w-full h-full"
-//             />
-//           </div>
-//         </div>
-//       )}
- 
-//     </div>
-//   );
-// };
- 
-// export default Home;
- 
- 
 import React, { useState } from 'react';
-import pink from '../assets/pink.jpg';
+import pink from '../assets/black.png';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Resume from '../assets/Preethi.pdf';
+import CloseIcon from '@mui/icons-material/Close';
  
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -114,7 +24,7 @@ const Home = () => {
   const handleClose = () => setShowModal(false);
  
   return (
-    <div ref={containerRef}name='home' className='relative grid grid-cols-1 md:grid-cols-2 px-5 min-h-screen bg-black text-[#c76acb] pt-[80px]'>
+    <div ref={containerRef}name='home' className='relative grid grid-cols-1 md:grid-cols-2 px-5 min-h-screen overflow-hidden bg-black text-[#c76acb] pt-[80px]'>
       {/* Gradient Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Radial gradient */}
@@ -154,26 +64,26 @@ const Home = () => {
  
       {/* Left content */}
       <motion.div
-        className='max-w-[1000px] mx-auto ml-0 lg:ml-44 flex flex-col justify-center h-full z-10'
-        style={{ y: yText, opacity }}
+        className='mx-auto lg:ml-44 flex flex-col justify-center h-full z-10'
+        style={{ y: yText}}
         initial={{ x: -100, opacity: 0 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{x: 0 , opacity: 1}}
         transition={{ duration: 0.8 }}
       >
         <p className='text-xl md:text-4xl text-[#c76acb] mb-3'>Hi, this is</p>
-        <h1 className='text-4xl md:text-6xl font-bold text-[#6b7280]'>
-          I'm <span className='text-[#ccd6f6]'>Preethi S,</span>
+        <h1 className='text-3xl md:text-6xl font-bold text-[#6b7280]'>
+          <span className='text-[#ccd6f6]'>Preethi S,</span>
         </h1>
-        <h2 className='text-4xl md:text-6xl font-bold text-[#6b7280]'>Front-End Developer</h2>
-        <p className='text-xl  md:text-2xl text-[#c76acb] mt-3'>
+        <h2 className='text-3xl md:text-6xl font-bold text-[#6b7280]'>Front-End Developer</h2>
+        <p className='text-lg md:text-2xl text-[#c76acb] mt-3'>
           Specialized in building responsive websites with clean UI/UX designs. I'm glad that you came here to know about me.
         </p>
-        <div className='mt-5'>
+        <div className='mt-2 md:mt-5'>
           <button
             onClick={handleResume}
-            className='group my-2 px-8 py-3 border-2 flex items-center text-black bg-white hover:bg-[#c76acb] hover:border-[#c76acb] rounded-md relative overflow-hidden'
+            className='group my-2 px-4 md:px-8 py-1 md:py-3 border-2 flex items-center text-black bg-white hover:bg-[#c76acb] hover:border-[#c76acb] rounded-md relative overflow-hidden'
           >
-            <span className="relative z-10">My Resume</span>
+            <span className="relative z-10 text-sm md:text-xl">My Resume</span>
             <span className="absolute inset-0 bg-[linear-gradient(90deg,#c76acb,#ccd6f6)] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
         </div>
@@ -193,8 +103,8 @@ const Home = () => {
             alt='Profile Pic'
             src={pink}
             sx={{     
-              width: { xs: 280, sm: 350, md: 500 },
-              height: { xs: 280, sm: 350, md: 500 },
+              width: { xs: 250, sm: 350, md: 450 },
+              height: { xs: 250, sm: 350, md: 450 },
               borderRadius: '50%',
               objectFit: 'cover',
               position: 'relative',
@@ -222,17 +132,10 @@ const Home = () => {
       {showModal && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center">
           <div className="bg-white rounded-md p-4 max-w-4xl w-full h-[80%] relative">
-            <button
-              onClick={handleClose}
-              className="absolute top-0 right-1 text-black font-bold text-lg"
-            >
-              ✕
+            <button onClick={handleClose} className="absolute top-0 right-1 text-black font-bold text-lg">
+             <CloseIcon />
             </button>
-            <iframe
-              src={Resume}
-              title="Resume PDF"
-              className="w-full h-full"
-            />
+            <iframe src={Resume} title="Resume PDF" className="w-full h-full"/>
           </div>
         </div>
       )}
@@ -243,6 +146,7 @@ const Home = () => {
 };
  
 export default Home;
+ 
  
  
 // import React, { useState, useEffect } from 'react';
@@ -444,9 +348,4 @@ export default Home;
 // };
  
 // export default Home;
- 
- 
- 
- 
- 
  
