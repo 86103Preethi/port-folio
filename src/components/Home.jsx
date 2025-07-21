@@ -70,11 +70,11 @@ const Home = () => {
         whileInView={{x: 0 , opacity: 1}}
         transition={{ duration: 0.8 }}
       >
-        <p className='text-xl md:text-4xl text-[#c76acb] mb-3'>Hi, this is</p>
-        <h1 className='text-3xl md:text-6xl font-bold text-[#6b7280]'>
+        <p className='text-xl md:text-2xl text-[#c76acb] mb-3'>Hi, this is</p>
+        <h1 className='text-3xl md:text-5xl font-bold text-[#6b7280]'>
           <span className='text-[#ccd6f6]'>Preethi S,</span>
         </h1>
-        <h2 className='text-3xl md:text-6xl font-bold text-[#6b7280]'>Front-End Developer</h2>
+        <h2 className='text-3xl md:text-5xl font-bold text-[#6b7280]'>Front-End Developer</h2>
         <p className='text-lg md:text-2xl text-[#c76acb] mt-3'>
           Specialized in building responsive websites with clean UI/UX designs. I'm glad that you came here to know about me.
         </p>

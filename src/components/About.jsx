@@ -21,8 +21,8 @@ const About = () => {
   };
 
   return (
-    <div name='about' className='bg-black text-[#6b7280] flex items-center min-h-screen overflow-x-hidden'>
-      <div className='max-w-[1500px] mx-auto w-full'>
+    <div name='about' className='bg-black text-[#6b7280] flex items-center min-h-screen overflow-x-hidden px-5'>
+      <div className='max-w-[1300px] mx-auto w-full'>
 
         {/* Header */}
         <div>
@@ -32,21 +32,21 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className='text-[#ccd6f6] text-4xl md:text-6xl font-bold inline border-b-4 border-[#c76acb]'>About</p>
+            <p className='text-[#ccd6f6] text-5xl font-bold inline border-b-4 border-[#c76acb]'>About</p>
           </motion.div>
         </div>
 
         {/* Content */}
-        <div className='grid sm:grid-cols-2 gap-8 px-5 py-6 items-center'>
+        <div className='grid sm:grid-cols-2 gap-3 py-6 items-center'>
 
           {/* Left side - animate from left */}
           <motion.div
-            className='text-center md:text-right text-2xl md:text-5xl font-bold text-[#ccd6f6]'
+            className='text-center md:text-right text-2xl md:text-4xl font-bold text-[#ccd6f6]'
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p>Nice to meet you.<br />Please take a look around.</p>
+            <p>Nice to meet you,<br />Please take a look around.</p>
           </motion.div>
 
           {/* Right side - animate from right */}
@@ -56,7 +56,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-          <p>{slides[slideIndex]}</p>
+          <p className="">{slides[slideIndex]}</p>
 
             {/* Arrow */}
             <div className='mt-4 flex justify-start' onClick={handleSlide}>

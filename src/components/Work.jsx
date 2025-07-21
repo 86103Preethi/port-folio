@@ -29,15 +29,15 @@ const experiences = [
 const Work = () => {
   return (
     <div name="work" className="bg-black text-white min-h-screen text-center flex items-center px-5">
-      <div className="max-w-[1000px] mx-auto w-full ">
-        <div className='sm:mb-10'>
-          <p className="text-4xl md:text-6xl font-bold inline border-b-4 border-[#c76acb] text-[#ccd6f6] mb-4">Experience</p>
-          <p className="text-[#d1d5db] py-6">My journey so far in the tech industry</p>
+      <div className="max-w-[900px] mx-auto w-full mt-10">
+        <div className=''>
+          <p className="text-5xl font-bold inline border-b-4 border-[#c76acb] text-[#ccd6f6] mb-4">Experience</p>
+          <p className="text-[#d1d5db] py-6 md:text-xl">My journey so far in the tech industry</p>
         </div>
         <Grid container spacing={4} direction="column" alignItems="center">
           {experiences.map((exp, idx) => (
             <Grid item xs={12} sm={6} md={6} key={idx}>
-              <Card variant="outlined" sx={{ maxWidth: 800, mx: 'auto', backgroundColor: '#1f1f1f', color: '#fff' }}>
+              <Card variant="outlined" sx={{ MaxWidth: 900, mx: 'auto', backgroundColor: '#1f1f1f', color: '#fff' }}>
                 <Box sx={{ p: 2 }}>
                   <Stack direction="row" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
                     <Typography gutterBottom variant="h6" component="div" sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }} >

@@ -81,7 +81,7 @@ const Work = () => {
     slidesToShow: 3, 
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '60px', 
+    centerPadding: '200px', 
     arrows: true,
     responsive: [
       {
@@ -106,10 +106,10 @@ const Work = () => {
 
   return (
     <div name="project" className="w-full bg-black text-[#ccd6f6] flex items-center text-center min-h-screen px-5">
-      <div className="max-w-[1500px] mx-auto w-full">
-        <div className='sm:mb-10'>
-          <p className="text-4xl md:text-6xl font-bold inline border-b-4 border-[#c76acb] mb-4">Projects</p>
-          <p className="text-[#d1d5db] py-6">A Collection of My Mini Builds & Ideas</p>
+      <div className="max-w-[1300px] mx-auto w-full">
+        <div className=''>
+          <p className="text-5xl font-bold inline border-b-4 border-[#c76acb] mb-4">Projects</p>
+          <p className="text-[#d1d5db] py-6 md:text-xl">A Collection of My Mini Builds & Ideas</p>
         </div>
         <Slider {...settings} >
           {workData.map((item, index) => (
@@ -127,10 +127,54 @@ const Work = () => {
                   <Typography variant="body2" sx={{color: '#9ca3af', overflow: 'hidden',display: '-webkit-box',WebkitLineClamp: 6, WebkitBoxOrient: 'vertical',}}>{item.description}</Typography>
                 </CardContent>
                 <CardActions sx={{ justifyContent: 'space-between', px: 2}}>
-                  <Button size="small" href={item.certificate} target="_blank" variant="outlined" sx={{ color: '#c76acb', borderColor: '#c76acb' }}>
+                  <Button size="small"  href={item.certificate} target="_blank" variant="outlined" sx={{
+                      position: 'relative', overflow: 'hidden', color: '#c76acb', borderColor: '#c76acb', zIndex: 0,
+                      '&:hover': {
+                        borderColor: '#c76acb',
+                        color: '#000',
+                      },
+                      '&::before': {
+                        content: '""',
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        height: '100%',
+                        width: '100%',
+                        background: 'linear-gradient(90deg, #c76acb, #ccd6f6)',
+                        opacity: 0,
+                        zIndex: -1,
+                        transition: 'opacity 0.3s ease-in-out',
+                      },
+                      '&:hover::before': {
+                        opacity: 1,
+                      }
+                    }}
+                  >
                     Source Code
                   </Button>
-                  <Button size="small" onClick={() => handleOpen(item.video)} variant="outlined" sx={{ color: '#c76acb', borderColor: '#c76acb' }}>
+                  <Button size="small" onClick={() => handleOpen(item.video)} variant="outlined" sx={{
+                      position: 'relative',overflow: 'hidden',color: '#c76acb',borderColor: '#c76acb',zIndex: 0,
+                      '&:hover': {
+                        borderColor: '#c76acb',
+                        color: '#000',
+                      },
+                      '&::before': {
+                        content: '""',
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        height: '100%',
+                        width: '100%',
+                        background: 'linear-gradient(90deg, #c76acb, #ccd6f6)',
+                        opacity: 0,
+                        zIndex: -1,
+                        transition: 'opacity 0.3s ease-in-out',
+                      },
+                      '&:hover::before': {
+                        opacity: 1,
+                      }
+                    }}
+                  >
                     Sample Video
                   </Button>
                 </CardActions>
