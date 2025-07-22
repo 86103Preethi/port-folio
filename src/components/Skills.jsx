@@ -5,6 +5,7 @@ import css from '../assets/css.png';
 import svelte from '../assets/svelte.png';
 import tailwind from '../assets/tailwind.png';
 import js from '../assets/js.png';
+import redux from '../assets/redux.png';
 
 import git from '../assets/git.png';
 import github from '../assets/github.png';
@@ -21,6 +22,7 @@ const skillData = [
   { name: 'JavaScript', icon: js, level: 90 },
   { name: 'React.js', icon: reactLogo, level: 90 },
   { name: 'Tailwind CSS', icon: tailwind, level: 85 },
+  { name: 'redux', icon: redux, level: 60 },
   { name: 'Svelte.js', icon: svelte, level: 80 },
   { name: 'Git', icon: git, level: 80 },
   { name: 'Github', icon: github, level: 50 },
