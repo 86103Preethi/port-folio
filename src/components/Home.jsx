@@ -18,7 +18,7 @@ const Home = () => {
   // Create parallax effects
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const yImage = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.2]);
+  // const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.2]);
  
   const handleResume = () => setShowModal(true);
   const handleClose = () => setShowModal(false);

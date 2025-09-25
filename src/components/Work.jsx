@@ -14,7 +14,7 @@ const experiences = [
     role: 'Junior Front-End Developer',
     period: 'Mar 2023 - Present',
     description: 'Developed responsive UI using React, Tailwind CSS, HTML, and CSS. Contributed to live projects including web apps and dashboards.',
-    tags: ['HTML5', 'CSS3', , 'Javascript (ES6+)', 'React.js', 'Tailwind CSS', 'Svelte.js', 'GSAP', 'Phasor.io'],
+    tags: ['HTML5', 'CSS3', 'Javascript (ES6+)', 'React.js', 'Tailwind CSS', 'Svelte.js', 'GSAP', 'Phasor.io'],
   },
   {
     company: 'Augray Pvt Ltd',
